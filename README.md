@@ -162,6 +162,10 @@ astro-whoami/
 └── tailwind.css
 ```
 
+## Documentation
+
+- [Why Astro for Personal Websites](docs/why-astro.md) - justification for choosing Astro over Next.js, Hugo, and others
+
 ## License
 
 MIT
