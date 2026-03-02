@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Newsreader", "Georgia", serif;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Newsreader Variable", "Georgia", serif;
+  --font-sans: "Inter Variable", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
 }
 
