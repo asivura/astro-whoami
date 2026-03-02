@@ -6,14 +6,16 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "npm run build && wrangler dev",
     "check": "astro check",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
     "prepare": "husky",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "lint-staged": {
     "*.{astro,ts,js}": [
@@ -29,6 +31,7 @@
     ]
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
     "@fontsource-variable/inter": "^5.2.8",
@@ -51,6 +54,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1"
+    "typescript-eslint": "^8.56.1",
+    "wrangler": "^4.69.0"
   }
 }
