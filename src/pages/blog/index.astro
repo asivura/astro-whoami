@@ -23,5 +23,17 @@ const posts = (await getCollection("blog"))
     Thoughts on engineering, design, and building for the web.
   </p>
 
-  <PostList posts={posts} />
+  {
+    posts.length > 0 ? (
+      <PostList posts={posts} />
+    ) : (
+      <p style="color: var(--color-text-muted); font-size: 0.9375rem;">
+        No posts yet. Add a markdown file to{" "}
+        <code style="font-family: var(--font-mono); font-size: 0.875em;">
+          src/data/blog/
+        </code>{" "}
+        to get started.
+      </p>
+    )
+  }
 </PageLayout>
