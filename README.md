@@ -2,6 +2,8 @@
 
 A minimal, text-forward, AI-agent-friendly personal website template built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com).
 
+[Live Demo](https://astro-whoami.sivura.com) | [Use This Template](https://github.com/asivura/astro-whoami/generate)
+
 Inspired by [leerob.com](https://leerob.com) and [danielmiessler.com](https://danielmiessler.com).
 
 ## Features
@@ -18,14 +20,13 @@ Inspired by [leerob.com](https://leerob.com) and [danielmiessler.com](https://da
 ## Quick Start
 
 ```bash
-# Clone the template
+# Create a new project from the template
+npm create astro@latest -- --template asivura/astro-whoami
+
+# Or clone directly
 git clone https://github.com/asivura/astro-whoami.git my-site
 cd my-site
-
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
 ```
 
