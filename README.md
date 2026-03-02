@@ -170,6 +170,7 @@ astro-whoami/
 ## Documentation
 
 - [Why Astro for Personal Websites](docs/why-astro.md) - justification for choosing Astro over Next.js, Hugo, and others
+- [Competitive Analysis](docs/competitive-analysis.md) - how astro-whoami compares to other popular Astro templates
 
 ## License
 
