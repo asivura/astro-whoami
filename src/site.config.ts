@@ -50,6 +50,6 @@ export const siteConfig = {
       url: "https://example.com",
     },
   },
-} as const;
+} as const
 
-export type SiteConfig = typeof siteConfig;
+export type SiteConfig = typeof siteConfig

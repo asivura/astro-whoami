@@ -1,7 +1,7 @@
 ---
-import PageLayout from "../layouts/PageLayout.astro";
-import JsonLd from "../components/JsonLd.astro";
-import { siteConfig } from "../site.config";
+import PageLayout from "../layouts/PageLayout.astro"
+import JsonLd from "../components/JsonLd.astro"
+import { siteConfig } from "../site.config"
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -17,7 +17,7 @@ const jsonLd = {
     },
     sameAs: Object.values(siteConfig.social),
   },
-};
+}
 ---
 
 <PageLayout title="About" description={`About ${siteConfig.author.name}`}>
@@ -48,8 +48,8 @@ const jsonLd = {
 
     <p>
       My day-to-day involves TypeScript, Python, and whatever tool best fits the
-      problem. I care about clean APIs, fast feedback loops, and systems that are
-      easy to reason about.
+      problem. I care about clean APIs, fast feedback loops, and systems that
+      are easy to reason about.
     </p>
 
     <p>Technologies I use regularly:</p>

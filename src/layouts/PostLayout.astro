@@ -1,23 +1,30 @@
 ---
-import PageLayout from "./PageLayout.astro";
-import JsonLd from "../components/JsonLd.astro";
-import FormattedDate from "../components/FormattedDate.astro";
-import { siteConfig } from "../site.config";
+import PageLayout from "./PageLayout.astro"
+import JsonLd from "../components/JsonLd.astro"
+import FormattedDate from "../components/FormattedDate.astro"
+import { siteConfig } from "../site.config"
 
 interface Props {
-  title: string;
-  description: string;
-  pubDate: Date;
-  updatedDate?: Date;
-  tags?: string[];
-  ogImage?: string;
-  canonicalUrl?: string;
+  title: string
+  description: string
+  pubDate: Date
+  updatedDate?: Date
+  tags?: string[]
+  ogImage?: string
+  canonicalUrl?: string
 }
 
-const { title, description, pubDate, updatedDate, tags, ogImage, canonicalUrl } =
-  Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  tags,
+  ogImage,
+  canonicalUrl,
+} = Astro.props
 
-const postUrl = new URL(Astro.url.pathname, siteConfig.url).href;
+const postUrl = new URL(Astro.url.pathname, siteConfig.url).href
 
 const blogPostingLd = {
   "@context": "https://schema.org",
@@ -36,7 +43,7 @@ const blogPostingLd = {
     "@type": "WebPage",
     "@id": postUrl,
   },
-};
+}
 ---
 
 <PageLayout

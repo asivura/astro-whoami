@@ -13,7 +13,7 @@ npm run preview   # Preview production build
 
 ## Structure
 
-```
+```text
 astro-whoami/
 ├── src/
 │   ├── site.config.ts      # Single config file for personalization
@@ -41,9 +41,34 @@ astro-whoami/
 - TypeScript
 - Shiki (code highlighting with light/dark theme support)
 
+## Linting
+
+```bash
+npm run format:check  # Check Prettier formatting
+npm run lint          # ESLint
+npm run check         # Astro type check
+npm run lint:md       # Markdownlint
+npm run format        # Auto-format with Prettier
+```
+
+Pre-commit hooks (husky + lint-staged) run automatically on commit.
+Commitlint enforces conventional commit messages.
+
+## Commit Workflow
+
+Branch protection is enabled. All changes require PRs.
+
+```bash
+git checkout -b <type>/<short-description>
+git add <files>
+git commit -m "<type>: <description>"
+git push -u origin HEAD
+gh pr create --fill
+```
+
 ## Conventions
 
-- No branch protection. Commit and push directly to main.
+- Conventional commits required
 - Pure Astro components, no React/Vue/Svelte
 - Markdown only for content (no MDX)
 - Semantic HTML5 throughout

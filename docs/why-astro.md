@@ -71,7 +71,7 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     tags: z.array(z.string()).default([]),
   }),
-});
+})
 ```
 
 Frontmatter is validated at build time. Type errors are caught before deployment. No runtime surprises.
@@ -133,15 +133,15 @@ Combined with semantic HTML, JSON-LD structured data, and clean URL patterns, an
 
 ## Summary
 
-| Requirement | Astro | Next.js | Hugo | 11ty |
-| --- | --- | --- | --- | --- |
-| Zero JS shipped by default | Yes | No | Yes | Yes |
-| Typed content collections | Yes | No | No | No |
-| Modern component model | Yes | Yes (React) | No | No |
-| Markdown-first authoring | Yes | Partial | Yes | Yes |
-| Build speed (small site) | Fast | Slow | Fastest | Fast |
-| Theme ecosystem | Growing | Paid mostly | Large | Small |
-| Static output, no server | Yes | Optional | Yes | Yes |
-| Selective interactivity | Islands | Full hydration | Manual | Manual |
+| Requirement                | Astro   | Next.js        | Hugo    | 11ty   |
+| -------------------------- | ------- | -------------- | ------- | ------ |
+| Zero JS shipped by default | Yes     | No             | Yes     | Yes    |
+| Typed content collections  | Yes     | No             | No      | No     |
+| Modern component model     | Yes     | Yes (React)    | No      | No     |
+| Markdown-first authoring   | Yes     | Partial        | Yes     | Yes    |
+| Build speed (small site)   | Fast    | Slow           | Fastest | Fast   |
+| Theme ecosystem            | Growing | Paid mostly    | Large   | Small  |
+| Static output, no server   | Yes     | Optional       | Yes     | Yes    |
+| Selective interactivity    | Islands | Full hydration | Manual  | Manual |
 
 Astro occupies the sweet spot: modern developer experience with static site simplicity. For a content-driven personal website, it's the most aligned tool available.
