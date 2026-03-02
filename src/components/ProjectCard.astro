@@ -27,7 +27,7 @@ const link = url || repo
   >
     {
       link ? (
-        <h3 style="margin: 0; font-size: 1.0625rem; font-weight: 600; font-family: var(--font-sans);">
+        <h2 style="margin: 0; font-size: 1.0625rem; font-weight: 600; font-family: var(--font-sans);">
           <a
             href={link}
             target="_blank"
@@ -36,11 +36,11 @@ const link = url || repo
           >
             {title}
           </a>
-        </h3>
+        </h2>
       ) : (
-        <h3 style="margin: 0; font-size: 1.0625rem; font-weight: 600; font-family: var(--font-sans); color: var(--color-text);">
+        <h2 style="margin: 0; font-size: 1.0625rem; font-weight: 600; font-family: var(--font-sans); color: var(--color-text);">
           {title}
-        </h3>
+        </h2>
       )
     }
     {
