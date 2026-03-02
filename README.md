@@ -55,7 +55,7 @@ export const siteConfig = {
   },
 
   // ... see file for all options
-};
+}
 ```
 
 ## Adding Content
@@ -135,16 +135,21 @@ npx netlify deploy --build
 
 ## Commands
 
-| Command            | Action                                   |
-| :----------------- | :--------------------------------------- |
-| `npm install`      | Install dependencies                     |
-| `npm run dev`      | Start dev server at `localhost:4321`     |
-| `npm run build`    | Build production site to `./dist/`       |
-| `npm run preview`  | Preview production build locally         |
+| Command                | Action                               |
+| :--------------------- | :----------------------------------- |
+| `npm install`          | Install dependencies                 |
+| `npm run dev`          | Start dev server at `localhost:4321` |
+| `npm run build`        | Build production site to `./dist/`   |
+| `npm run preview`      | Preview production build locally     |
+| `npm run lint`         | Lint with ESLint                     |
+| `npm run format`       | Format with Prettier                 |
+| `npm run format:check` | Check formatting                     |
+| `npm run check`        | Type check with Astro                |
+| `npm run lint:md`      | Lint markdown files                  |
 
 ## Project Structure
 
-```
+```text
 astro-whoami/
 ├── public/
 │   ├── favicon.svg

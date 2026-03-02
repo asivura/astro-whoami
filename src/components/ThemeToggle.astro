@@ -13,38 +13,38 @@
 
 <script>
   function setupThemeToggle() {
-    const button = document.getElementById("theme-toggle");
-    const icon = document.getElementById("theme-icon");
-    if (!button || !icon) return;
+    const button = document.getElementById("theme-toggle")
+    const icon = document.getElementById("theme-icon")
+    if (!button || !icon) return
 
-    const themes = ["light", "dark", "sepia"] as const;
+    const themes = ["light", "dark", "sepia"] as const
     const icons: Record<string, string> = {
       light: "\u2600",
       dark: "\u263E",
       sepia: "\u25C9",
-    };
+    }
 
     function getCurrentTheme(): string {
-      return document.documentElement.getAttribute("data-theme") || "light";
+      return document.documentElement.getAttribute("data-theme") || "light"
     }
 
     function updateIcon() {
-      const current = getCurrentTheme();
-      icon.textContent = icons[current] || icons.light;
+      const current = getCurrentTheme()
+      icon!.textContent = icons[current] || icons.light
     }
 
     button.addEventListener("click", () => {
-      const current = getCurrentTheme();
-      const currentIndex = themes.indexOf(current as (typeof themes)[number]);
-      const next = themes[(currentIndex + 1) % themes.length];
-      document.documentElement.setAttribute("data-theme", next);
-      localStorage.setItem("theme", next);
-      updateIcon();
-    });
+      const current = getCurrentTheme()
+      const currentIndex = themes.indexOf(current as (typeof themes)[number])
+      const next = themes[(currentIndex + 1) % themes.length]
+      document.documentElement.setAttribute("data-theme", next)
+      localStorage.setItem("theme", next)
+      updateIcon()
+    })
 
-    updateIcon();
+    updateIcon()
   }
 
-  setupThemeToggle();
-  document.addEventListener("astro:after-swap", setupThemeToggle);
+  setupThemeToggle()
+  document.addEventListener("astro:after-swap", setupThemeToggle)
 </script>

@@ -1,18 +1,18 @@
 ---
-import FormattedDate from "./FormattedDate.astro";
+import FormattedDate from "./FormattedDate.astro"
 
 interface Props {
   posts: Array<{
-    id: string;
+    id: string
     data: {
-      title: string;
-      pubDate: Date;
-      description: string;
-    };
-  }>;
+      title: string
+      pubDate: Date
+      description: string
+    }
+  }>
 }
 
-const { posts } = Astro.props;
+const { posts } = Astro.props
 ---
 
 <ul style="list-style: none; padding: 0; margin: 0;">
