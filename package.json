@@ -1,7 +1,7 @@
 {
   "name": "astro-whoami",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A minimal, text-forward, AI-agent-friendly personal website template built with Astro.",
   "scripts": {
     "dev": "astro dev",

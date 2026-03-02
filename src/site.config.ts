@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Jane Developer",
   description:
     "Software engineer building at the intersection of AI and design.",
-  url: "https://example.com",
+  url: "https://astro-whoami.sivura.com",
 
   author: {
     name: "Jane Developer",
@@ -47,7 +47,7 @@ export const siteConfig = {
     jobTitle: "Software Engineer",
     worksFor: {
       name: "Example Corp",
-      url: "https://example.com",
+      url: "https://astro-whoami.sivura.com",
     },
   },
 } as const
