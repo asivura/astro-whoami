@@ -7,7 +7,7 @@ Inspired by [leerob.com](https://leerob.com) and [danielmiessler.com](https://da
 ## Features
 
 - **Minimal, text-forward design** with serif typography and generous whitespace
-- **Three themes**: light, dark, and sepia with system preference detection
+- **Two themes**: light and dark with system preference detection
 - **AI-agent friendly**: semantic HTML, JSON-LD structured data on every page, RSS feed, sitemap
 - **Blog** with markdown content collections and typed frontmatter
 - **Projects** page with tech stack tags
@@ -94,7 +94,7 @@ period: "2025 - Present"
 
 ## Theme System
 
-The template supports three themes: **light** (default), **dark**, and **sepia**. Users can cycle through them with the toggle in the navigation bar.
+The template supports two themes: **light** (default) and **dark**. Users can toggle between them with the button in the navigation bar.
 
 To customize theme colors, edit the CSS custom properties in `src/styles/global.css`.
 
