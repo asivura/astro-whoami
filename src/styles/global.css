@@ -36,21 +36,6 @@
   --color-tag-text: #a0a0a0;
 }
 
-/* Sepia theme */
-[data-theme="sepia"] {
-  --color-bg: #f4ecd8;
-  --color-bg-secondary: #ede4cc;
-  --color-text: #3b2e1a;
-  --color-text-secondary: #6b5839;
-  --color-text-muted: #8a7a5f;
-  --color-link: #3b2e1a;
-  --color-link-hover: #8b4513;
-  --color-border: #d4c9a8;
-  --color-code-bg: #e8dfc8;
-  --color-tag-bg: #ddd4be;
-  --color-tag-text: #6b5839;
-}
-
 /* Base styles */
 body {
   background-color: var(--color-bg);
@@ -204,9 +189,4 @@ a:hover {
 [data-theme="dark"] .astro-code,
 [data-theme="dark"] .astro-code span {
   color: var(--shiki-dark) !important;
-}
-
-[data-theme="sepia"] .astro-code,
-[data-theme="sepia"] .astro-code span {
-  color: var(--shiki-light) !important;
 }

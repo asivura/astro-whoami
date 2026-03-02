@@ -1,5 +1,5 @@
 ---
-// Theme toggle cycles: light -> dark -> sepia -> light
+// Theme toggle cycles: light -> dark -> light
 ---
 
 <button
@@ -17,11 +17,10 @@
     const icon = document.getElementById("theme-icon")
     if (!button || !icon) return
 
-    const themes = ["light", "dark", "sepia"] as const
+    const themes = ["light", "dark"] as const
     const icons: Record<string, string> = {
       light: "\u2600",
       dark: "\u263E",
-      sepia: "\u25C9",
     }
 
     function getCurrentTheme(): string {
