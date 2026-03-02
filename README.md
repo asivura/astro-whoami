@@ -114,10 +114,12 @@ This template is designed to be machine-readable:
 
 ## Deployment
 
-### Cloudflare Pages
+### Cloudflare Pages (Recommended)
+
+See the full [Deploy to Cloudflare](docs/deploy-cloudflare.md) guide for detailed instructions including custom domains.
 
 1. Push your repo to GitHub
-2. Go to [Cloudflare Pages](https://pages.cloudflare.com)
+2. Go to [Cloudflare dashboard](https://dash.cloudflare.com) > Workers & Pages > Create
 3. Connect your repository
 4. Set build command: `npm run build`
 5. Set build output directory: `dist`
@@ -170,6 +172,7 @@ astro-whoami/
 
 ## Documentation
 
+- [Deploy to Cloudflare](docs/deploy-cloudflare.md) - step-by-step guide to publish your site on Cloudflare Pages
 - [Why Astro for Personal Websites](docs/why-astro.md) - justification for choosing Astro over Next.js, Hugo, and others
 - [Competitive Analysis](docs/competitive-analysis.md) - how astro-whoami compares to other popular Astro templates
 
