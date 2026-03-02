@@ -21,8 +21,9 @@ const { title, description, ogImage, canonicalUrl } = Astro.props
 >
   <slot name="head" slot="head" />
   <div style="max-width: 650px; margin: 0 auto; padding: 0 1.25rem;">
+    <a href="#main" class="sr-only">Skip to main content</a>
     <Nav />
-    <main>
+    <main id="main">
       <slot />
     </main>
     <Footer />

@@ -23,5 +23,17 @@ const projects = (await getCollection("projects")).sort(
     Selected projects and open source work.
   </p>
 
-  {projects.map((project) => <ProjectCard project={project} />)}
+  {
+    projects.length > 0 ? (
+      projects.map((project) => <ProjectCard project={project} />)
+    ) : (
+      <p style="color: var(--color-text-muted); font-size: 0.9375rem;">
+        No projects yet. Add a markdown file to{" "}
+        <code style="font-family: var(--font-mono); font-size: 0.875em;">
+          src/data/projects/
+        </code>{" "}
+        to get started.
+      </p>
+    )
+  }
 </PageLayout>

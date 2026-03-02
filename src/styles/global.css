@@ -36,6 +36,39 @@
   --color-tag-text: #a0a0a0;
 }
 
+/* Skip-to-main link (visually hidden until focused) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: 2px solid var(--color-link-hover);
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  z-index: 9999;
+}
+
 /* Base styles */
 body {
   background-color: var(--color-bg);
