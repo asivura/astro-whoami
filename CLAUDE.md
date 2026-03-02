@@ -18,7 +18,7 @@ astro-whoami/
 ├── src/
 │   ├── site.config.ts      # Single config file for personalization
 │   ├── content.config.ts   # Content collection schemas (blog, projects)
-│   ├── styles/global.css   # Theme variables (light/dark/sepia) + typography
+│   ├── styles/global.css   # Theme variables (light/dark) + typography
 │   ├── layouts/             # BaseLayout, PageLayout, PostLayout
 │   ├── components/          # Nav, Footer, ThemeToggle, PostList, ProjectCard
 │   ├── pages/               # Routes: index, blog, projects, about, rss, 404
