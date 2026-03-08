@@ -175,6 +175,7 @@ astro-whoami/
 - [Deploy to Cloudflare](docs/deploy-cloudflare.md) - step-by-step guide to publish your site on Cloudflare Pages
 - [Why Astro for Personal Websites](docs/why-astro.md) - justification for choosing Astro over Next.js, Hugo, and others
 - [Competitive Analysis](docs/competitive-analysis.md) - how astro-whoami compares to other popular Astro templates
+- [Roadmap](docs/roadmap.md) - planned improvements and design principles
 
 ## License
 
